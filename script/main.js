@@ -62,42 +62,6 @@ function sendMail() {
 
 }
 
-/* 
-function openPopUp1() {
-    document.getElementById("popUp1").style.display = "block";
-}
-function openPopUp2() {
-    document.getElementById("overlay2").style.display = "block";
-    document.getElementById("popUp2").style.display = "block";
-}
-function openPopUp3() {
-    document.getElementById("overlay3").style.display = "block";
-    document.getElementById("popUp3").style.display = "block";
-}
-function openPopUp4() {
-    document.getElementById("overlay4").style.display = "block";
-    document.getElementById("popUp4").style.display = "block";
-}
-
-
-
-function closePopUp1() {
-
-}
-
-function closePopUp2() {
-    document.getElementById("overlay2").style.display = "none";
-    document.getElementById("popUp2").style.display = "none";
-}
-function closePopUp3() {
-    document.getElementById("overlay3").style.display = "none";
-    document.getElementById("popUp3").style.display = "none";
-}
-function closePopUp4() {
-    document.getElementById("overlay4").style.display = "none";
-    document.getElementById("popUp4").style.display = "none";
-} */
-
 function optionLangues() {
     var languesElement = document.getElementById("langues");
     
@@ -120,13 +84,14 @@ function optionLanguesClose_fr(){
 
 
 let items = document.querySelectorAll('.cartes .carte');
-let active = 3;
+/* premier carte */
+let active = 1;
 function loadShow(){
     items[active].style.transform = `none`;
     items[active].style.zIndex = 1;
     items[active].style.filter = 'none';
     items[active].style.opacity = 1;
-    // show after
+    // apres
     let stt = 0;
     for(var i = active + 1; i < items.length; i ++){
         stt++;

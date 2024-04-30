@@ -117,7 +117,7 @@
         </section>
 
         <section class="section2  mt-5">
-            <h1 id="apropos"> À Propos </h1>
+            <h1 class="apropos"> À Propos </h1>
             <div class="d-flex row mt-4">
 
                 <div class="col-md-8">
@@ -168,15 +168,15 @@
         </section>
 
         <section class="section3 mt-5">
-            <h1 id="experience">Éxperiences</h1>
+            <h1 class="experience">Éxperiences</h1>
 
             <div class="timeline ">
                 <div class=" box left-container">
                     <img src="img/pc.png">
                     <div class="text-box">
-                        <h4>Développeur Application</h4>
+                        <h4 class="experience1">Développeur Application</h4>
                         <small>05/2023 - 08/2023</small>
-                        <p>
+                        <p class="experience1_para">
                             J'ai travaillé sur le développement front-end et back-end
                             d'applications, utilisant React Native, TypeScript, Angular pour le front-end, Java, Spring
                             Boot pour le back-end, et assurant la communication via des API REST.
@@ -187,9 +187,9 @@
                 <div class=" box right-container">
                     <img src="img/pcpixel.png">
                     <div class="text-box">
-                        <h4>Développeur web</h4>
+                        <h4 class="experience2">Développeur web</h4>
                         <small>05/2022 - 08/2022</small>
-                        <p>
+                        <p class="experience2_para">
                             J'ai conçu à la fois le front-end et le back-end de sites web, utilisant HTML/CSS,
                             JavaScript et PHP, tout en ayant une expertise spécialisée dans le développement sur
                             WordPress avec Elementor et WooCommerce.
@@ -201,9 +201,9 @@
                 <div class=" box left-container">
                     <img src="img/resto.png">
                     <div class="text-box">
-                        <h4>Serveur en restauration</h4>
+                        <h4 class="experience3">Serveur en restauration</h4>
                         <small>06/2021 - 10/2021 </small>
-                        <p>
+                        <p class="experience3_para">
                             Développement de l'adaptabilité et des relations avec les clients. Capacité à s'adapter
                             rapidement et à interagir
                             efficacement avec les clients pour assurer leur satisfaction.
@@ -219,10 +219,48 @@
 
         <section class="section4 mt-5">
             <div id="Portfolio">
-                <h1>Portfolio</h1>
-                <p>Voici quelques uns de mes projets que j'ai réalisés. (Source Code)</p>
+                <h1 class="portfolio">Portfolio</h1>
 
                     <div class="cartes mt-5">
+
+                        
+
+                        <div class="carte d-flex flex-column">
+                            <h1 class="text-center ">Api - JS</h1>
+                            <div class="d-flex justify-content-center p-2">
+
+                                <img src="img/api.png"></img>
+
+                                <div class="d-flex justify-content-center align-items-center flex-column">
+                                    <span> #eccomerce #php #React JS</span>
+                                    <a href="https://gitlab.com/boubacar5/cuisineapi.git" target="_blank"> <button
+                                        class="lienSource  mt-3">
+                                        Source Code </button> </a>
+                                </div>
+                            </div>
+
+
+                            <div class="carte_para mt-3">
+
+                                <p class="carte1_para">En utilisant JavaScript, j'ai développé <strong> une barre de recherche </strong>
+                                    qui
+                                    permet aux utilisateurs
+                                    de rechercher des recettes dans la base de données de TheMealDB. Lorsqu'une recherche est
+                                    effectuée,
+                                    les
+                                    détails de la <strong> recette correspondante </strong> s'affichent. De plus, j'ai intégré une
+                                    fonctionnalité permettant
+                                    d'obtenir jusqu'à six recettes aléatoires lorsqu'un utilisateur clique sur le bouton dédié.
+                                    Chaque
+                                    résultat de recherche ou recette aléatoire est présenté sous forme de carte, comprenant une
+                                    image,
+                                    le
+                                    nom de la recette, et un lien pour afficher plus d'informations.
+                                </p>
+
+                            </div>
+
+                        </div>
 
                         <div class="carte d-flex flex-column">
                             <h1 class="text-center">E-Commerce</h1>
@@ -243,7 +281,7 @@
 
                             <div class="carte_para mt-3">
 
-                                <p>Mon projet récent en tant que développeur consiste en la création
+                                <p class="carte2_para">Mon projet récent en tant que développeur consiste en la création
                                     d'un portfolio
                                     interactif
                                     intégrant une boutique de livres fictifs. En utilisant React.js pour le
@@ -269,43 +307,7 @@
                             </div>
 
                         </div>
-
-                        <div class="carte d-flex flex-column">
-                            <h1 class="text-center ">Api - JS</h1>
-                            <div class="d-flex justify-content-center p-2">
-
-                                <img src="img/api.png"></img>
-
-                                <div class="d-flex justify-content-center align-items-center flex-column">
-                                    <span> #eccomerce #php #React JS</span>
-                                    <a href="https://gitlab.com/boubacar5/cuisineapi.git" target="_blank"> <button
-                                        class="lienSource  mt-3">
-                                        Source Code </button> </a>
-                                </div>
-                            </div>
-
-
-                            <div class="carte_para mt-3">
-
-                                <p >En utilisant JavaScript, j'ai développé <strong> une barre de recherche </strong>
-                                    qui
-                                    permet aux utilisateurs
-                                    de rechercher des recettes dans la base de données de TheMealDB. Lorsqu'une recherche est
-                                    effectuée,
-                                    les
-                                    détails de la <strong> recette correspondante </strong> s'affichent. De plus, j'ai intégré une
-                                    fonctionnalité permettant
-                                    d'obtenir jusqu'à six recettes aléatoires lorsqu'un utilisateur clique sur le bouton dédié.
-                                    Chaque
-                                    résultat de recherche ou recette aléatoire est présenté sous forme de carte, comprenant une
-                                    image,
-                                    le
-                                    nom de la recette, et un lien pour afficher plus d'informations.
-                                </p>
-
-                            </div>
-
-                        </div>
+                        
                         <div class="carte d-flex flex-column">
                             <h1 class="text-center"> Spring Security</h1>
 
@@ -323,7 +325,7 @@
 
                             <div class="carte_para mt-3">
 
-                                <p>Dans mon récent projet, j'ai développé une application en utilisant Spring Boot avec
+                                <p class="carte3_para">Dans mon récent projet, j'ai développé une application en utilisant Spring Boot avec
                                     une
                                     emphase particulière sur la sécurité. En intégrant le starter <strong>Spring Security </strong>,
                                     j'ai configuré
@@ -360,7 +362,7 @@
 
                             <div class="carte_para mt-3">
 
-                                <p>Le jeu Tic Tac Toe est conçu avec une approche de conception orientée objet
+                                <p class="carte4_para">Le jeu Tic Tac Toe est conçu avec une approche de conception orientée objet
                                     (<strong>POO</strong>) en Java.
                                     Les classes clés telles que Game, Cell, et Player encapsulent des fonctionnalités spécifiques.
                                     La
@@ -387,16 +389,16 @@
 
 
        <section class="section5 mt-5 ">
-            <h1>Faisons de grandes <br> choses ensemble !</h1>
+            <h1 class="contact">Faisons de grandes <br> choses ensemble !</h1>
 
             <div class="d-flex  row justify-content-center ">
                 <div class="form column col-md-6 ">
-                    <input type="text" id="nom" required placeholder="Votre Nom">
+                    <input type="text" id="nom" required placeholder="Name">
                     <input type="email" id="email" required placeholder="Email">
-                    <input type="text" id="sujet" required placeholder="Sujet">
-                    <textarea type="text" id="message" placeholder="Des mots ..."></textarea>
+                    <input type="text" id="sujet" required placeholder="Subject">
+                    <textarea type="text" id="message" placeholder="Message ... "></textarea>
                     <div>
-                        <button type="submit" id="submit" onclick="sendMail()">Envoyer le message <i
+                        <button type="submit" id="submit" onclick="sendMail()" class="envoyer">Envoyer le message <i
                                 class="bi bi-send"></i></button>
                     </div>
                 </div>
