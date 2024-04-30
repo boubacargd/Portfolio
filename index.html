@@ -1,11 +1,450 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@latest/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <!-- Script JS -->
+    <script src="script/main.js" defer></script>
+    <script src="script/translate.js" defer></script>
+    <script src="script/developer.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <link rel="website icon" type="pc" href="img/pc.png" />
+    <title>Boubacar</title>
 </head>
+
 <body>
-    <h1>Bismillah</h1>
+
+    <header class="sectionNav">
+        <nav class="navbar navbar-expand-lg  d-flex justify-content-between">
+            <a class="logoLink"><img src="img/logo.png" class="logo" alt="Logo"></a>
+
+            <div class=" d-flex row">
+                <a class="" href="https://discord.com/users/boubacargd" target="_blank"><i
+                        class="bi bi-discord"></i></a>
+                <a class="" href="https://github.com/boubacargadio/" target="_blank"><i class="bi bi-github"></i></a>
+                <a class="" href="https://www.linkedin.com/in/boubacar-gadio/" target="_blank"><i
+                        class="bi bi-linkedin"></i></a>
+                <a class=""><i class="bi bi-translate" onclick="optionLangues()"></i>
+                    <select id="langues">
+                        <option value="francais" language="francais" onclick="optionLanguesClose_fr()" class="active">
+                            Français</option>
+                        <option value="english" language="english" onclick="optionLanguesClose()">English</option>
+                        <option value="italiano" language="italiano" onclick="optionLanguesClose()">Italiano</option>
+                    </select> </a>
+            </div>
+
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="section1">
+
+            <div class="bienvenu  row col-md-12">
+
+                <div class="col-md-6">
+
+                    <p class="">
+                        <span class="salut">Salut, c'est</span>
+                        <a4>Boubacar</a4>,<br>
+                        <span class="developpeur">Développeur </span><span id="developpeur"></span>, <br>
+                        <span class="bienvenue">bienvenu sur mon site.</span>
+                    </p>
+
+                    <ul class="skills_list">
+                        <li><i class="bi bi-check-circle"></i>
+                            <span>Concepteur Développeur D'Application (2023 - en cours).</span>
+                        </li>
+                        <li><i class="bi bi-check-circle"></i>
+                            <span>Développeur web et web mobile(bac+2, obtenu).</span>
+                        </li>
+                        <li><i class="bi bi-check-circle"></i>
+                            <span>Plus de 15 projets en entreprise et ecole.</span>
+                        </li>
+                        <li><i class="bi bi-check-circle"></i>
+                            <span>Plus de <i>3 ans</i> d'experiences dans les nouvelles technologies.</span>
+                        </li>
+                    </ul>
+
+                    <button class="cv mt-2">Curriculum vitae <i class="bi bi-download"></i></button>
+
+                </div>
+
+                <div class="photo col-md-6 mt-3">
+                    <img src="img/boubacar.jpg" alt="Image de Boubacar">
+                </div>
+
+            </div>
+
+            <div class="languages ">
+
+                <div class="row col-md-12">
+
+                    <div class="col-md-6 mt-3">
+                        <p>Front-end</p>
+                        <div class="mt-4 listelang">
+                            <img src="img/imgLanguage/typescript.svg" alt="TypeScript" />
+                            <img src="img/imgLanguage/react.svg" alt="React JS" />
+                            <img src="img/imgLanguage/javascript.svg" alt="JavaScript" />
+                            <img src="img/imgLanguage/angular.svg" alt="Angular" />
+                            <img src="img/imgLanguage/bootstrap.svg" alt="Bootstrap" />
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 mt-3">
+                        <p>Back-end</p>
+                        <div class="mt-4 listelang">
+                            <img src="img/imgLanguage/spring.svg" alt="Java Spring" />
+                            <img src="img/imgLanguage/java.svg" alt="Java" />
+                            <img src="img/imgLanguage/docker.svg" alt="Docker" />
+                            <img src="img/imgLanguage/mysql.svg" alt="MySQL" />
+                            <img src="img/imgLanguage/php.svg" alt="PHP" />
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="section2  mt-5">
+            <h1 id="apropos"> À Propos </h1>
+            <div class="d-flex row mt-4">
+
+                <div class="col-md-8">
+                    <p class="apropos_para">
+                        Je suis Boubacar, âgé de 22 ans. Passionné par l'univers de la programmation, je me suis
+                        spécialisé
+                        en
+                        tant que <a3> Concepteur Développeur d’Applications </a3> , avec une expertise particulière en
+                        Java. Je
+                        suis
+                        actuellement à la recherche d'une opportunité d'alternance ou d'un poste en CDI dans ce domaine.
+                        <br><br>
+                        Diplômé en développement web, je cumule plus de <a2>3 ans </a2>d’expérience dans les nouvelles
+                        technologies.
+                        Motivé par les défis stimulants du développement web, je suis animé par la volonté de mettre en
+                        pratique
+                        mes compétences, de progresser professionnellement et de contribuer à des projets innovants.
+                    </p>
+                </div>
+
+                <div class="info col-md-4 d-flex justify-content-end">
+                    <div>
+                        <span>Linkedin</span>
+                        <p>
+                            <a href="https://www.linkedin.com/in/boubacar-gadio/" target="_blank">/in/boubacar-gadio
+                            </a>
+                        </p>
+
+                        <span>Email</span>
+                        <p>
+                            <a href="mailto:dev.boubacargadio@gmail.com" target="_blank">
+                                <a1>dev.boubacargadio@gmail.com</a1>
+                            </a>
+                        </p>
+
+                        <span>GitHub</span>
+                        <p>
+                            <a href="https://github.com/boubacargadio/" target="_blank">
+                                /boubacargadio
+                            </a>
+                        </p>
+                        <a href="https://drive.google.com/file/d/1PiEY3EDihsOqnBiNKvjn6smot3TIPIYU/view?usp=drive_link"
+                            target="_blank"> <button class="cv mt-2">Curriculum vitae <i
+                                    class="bi bi-download"></i></button></button> </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section3 mt-5">
+            <h1 id="experience">Éxperiences</h1>
+
+            <div class="timeline ">
+                <div class=" box left-container">
+                    <img src="img/pc.png">
+                    <div class="text-box">
+                        <h4>Développeur Application</h4>
+                        <small>05/2023 - 08/2023</small>
+                        <p>
+                            J'ai travaillé sur le développement front-end et back-end
+                            d'applications, utilisant React Native, TypeScript, Angular pour le front-end, Java, Spring
+                            Boot pour le back-end, et assurant la communication via des API REST.
+                        </p>
+                        <span class="left-arrow"></span>
+                    </div>
+                </div>
+                <div class=" box right-container">
+                    <img src="img/pcpixel.png">
+                    <div class="text-box">
+                        <h4>Développeur web</h4>
+                        <small>05/2022 - 08/2022</small>
+                        <p>
+                            J'ai conçu à la fois le front-end et le back-end de sites web, utilisant HTML/CSS,
+                            JavaScript et PHP, tout en ayant une expertise spécialisée dans le développement sur
+                            WordPress avec Elementor et WooCommerce.
+                        </p>
+                        <span class="right-arrow"></span>
+
+                    </div>
+                </div>
+                <div class=" box left-container">
+                    <img src="img/resto.png">
+                    <div class="text-box">
+                        <h4>Serveur en restauration</h4>
+                        <small>06/2021 - 10/2021 </small>
+                        <p>
+                            Développement de l'adaptabilité et des relations avec les clients. Capacité à s'adapter
+                            rapidement et à interagir
+                            efficacement avec les clients pour assurer leur satisfaction.
+                        </p>
+                        <span class="left-arrow"></span>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+        <section class="section4 mt-5">
+            <div id="Portfolio">
+                <h1>Portfolio</h1>
+                <p>Voici quelques uns de mes projets que j'ai réalisés. (Source Code)</p>
+
+                    <div class="cartes mt-5">
+
+                        <div class="carte d-flex flex-column">
+                            <h1 class="text-center">E-Commerce</h1>
+
+                            <div class="d-flex justify-content-center p-2">
+
+
+                                <img src="img/shopping.png">
+
+
+                                <div class="d-flex justify-content-center align-items-center flex-column">
+                                    <span> #eccomerce #php #React JS</span>
+                                    <a href="https://gitlab.com/boubacar5/portfolio" target="_blank">
+                                        <button class="lienSource mt-3">Source Code </button> </a>
+                                </div>
+                            </div>
+
+
+                            <div class="carte_para mt-3">
+
+                                <p>Mon projet récent en tant que développeur consiste en la création
+                                    d'un portfolio
+                                    interactif
+                                    intégrant une boutique de livres fictifs. En utilisant React.js pour le
+                                    front-end et PHP pour le
+                                    back-end, j'ai développé une interface dynamique permettant aux utilisateurs de
+                                    parcourir,
+                                    acheter,
+                                    et
+                                    effectuer des paiements sécurisés via <strong> l'intégration de Stripe
+                                    </strong>. Pour faciliter
+                                    la
+                                    gestion du contenu,
+                                    j'ai ajouté une interface administrateur qui permet aux <strong> administrateurs
+                                    </strong>
+                                    d'ajouter, mettre à jour, ou
+                                    supprimer des livres en vente. La communication entre le front-end et le
+                                    back-end est assurée
+                                    par
+                                    <strong> Axios </strong>,
+                                    garantissant des échanges de données fluides.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="carte d-flex flex-column">
+                            <h1 class="text-center ">Api - JS</h1>
+                            <div class="d-flex justify-content-center p-2">
+
+                                <img src="img/api.png"></img>
+
+                                <div class="d-flex justify-content-center align-items-center flex-column">
+                                    <span> #eccomerce #php #React JS</span>
+                                    <a href="https://gitlab.com/boubacar5/cuisineapi.git" target="_blank"> <button
+                                        class="lienSource  mt-3">
+                                        Source Code </button> </a>
+                                </div>
+                            </div>
+
+
+                            <div class="carte_para mt-3">
+
+                                <p >En utilisant JavaScript, j'ai développé <strong> une barre de recherche </strong>
+                                    qui
+                                    permet aux utilisateurs
+                                    de rechercher des recettes dans la base de données de TheMealDB. Lorsqu'une recherche est
+                                    effectuée,
+                                    les
+                                    détails de la <strong> recette correspondante </strong> s'affichent. De plus, j'ai intégré une
+                                    fonctionnalité permettant
+                                    d'obtenir jusqu'à six recettes aléatoires lorsqu'un utilisateur clique sur le bouton dédié.
+                                    Chaque
+                                    résultat de recherche ou recette aléatoire est présenté sous forme de carte, comprenant une
+                                    image,
+                                    le
+                                    nom de la recette, et un lien pour afficher plus d'informations.
+                                </p>
+
+                            </div>
+
+                        </div>
+                        <div class="carte d-flex flex-column">
+                            <h1 class="text-center"> Spring Security</h1>
+
+                            <div class="d-flex justify-content-center p-2">
+
+                                <img src="img/login.png"></img>
+
+                                <div class="d-flex justify-content-center align-items-center flex-column">
+                                    <span> #java #spring #security</span>
+                                    <a href="https://gitlab.com/boubacar5/portfolio" target="_blank">
+                                        <button class="lienSource mt-3">Source Code </button> </a>
+                                </div>
+                            </div>
+
+
+                            <div class="carte_para mt-3">
+
+                                <p>Dans mon récent projet, j'ai développé une application en utilisant Spring Boot avec
+                                    une
+                                    emphase particulière sur la sécurité. En intégrant le starter <strong>Spring Security </strong>,
+                                    j'ai configuré
+                                    l'authentification dans Spring pour garantir un accès sécurisé à l'application. Pour renforcer
+                                    la
+                                    sécurité, j'ai mis en œuvre la génération d'un token JWT (<strong>JSON Web Token</strong>), puis
+                                    j'ai géré le traitement
+                                    du token à l'aide d'un filtre dédié. Ce filtre assure la validation et l'authentification des
+                                    utilisateurs à chaque requête, offrant ainsi une protection. De plus, j'ai sécurisé différentes
+                                    ressources en attribuant des <strong> rôles aux utilisateurs </strong>, assurant ainsi un
+                                    contrôle
+                                    d'accès approprié.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <div class="carte d-flex flex-column">
+
+                            <h1 class="text-center">POO - Java</h1>
+
+                            <div class="d-flex justify-content-center p-2">
+
+                                <img src="img/java.svg" alt="java"/>
+
+                                <div class="d-flex justify-content-center align-items-center flex-column">
+                                    <span> #java #POO #class</span>
+                                    <a href="https://github.com/boubacargadio/JavaExo/tree/boubacar/src" target="_blank"> <button
+                                        class="lienSource  mt-3"> Source Code </button> </a>
+                                </div>
+                            </div>
+
+
+                            <div class="carte_para mt-3">
+
+                                <p>Le jeu Tic Tac Toe est conçu avec une approche de conception orientée objet
+                                    (<strong>POO</strong>) en Java.
+                                    Les classes clés telles que Game, Cell, et Player encapsulent des fonctionnalités spécifiques.
+                                    La
+                                    classe
+                                    Game gère la logique du jeu avec des <strong> méthodes </strong>comme move(), isValidMove(), et
+                                    checkPlayerWin(). La
+                                    classe Player définit les caractéristiques individuelles des joueurs. Cette structure favorise
+                                    une
+                                    organisation claire et modulaire du code, améliorant la lisibilité et la <strong> maintenance du
+                                        projet</strong>.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                        <button id="next"><i class="bi bi-arrow-right-circle-fill"></i></button>
+                        <button id="prev"><i class="bi bi-arrow-left-circle-fill"></i></button>
+                    </div>
+            </div>
+
+        </section>
+
+
+
+       <section class="section5 mt-5 ">
+            <h1>Faisons de grandes <br> choses ensemble !</h1>
+
+            <div class="d-flex  row justify-content-center ">
+                <div class="form column col-md-6 ">
+                    <input type="text" id="nom" required placeholder="Votre Nom">
+                    <input type="email" id="email" required placeholder="Email">
+                    <input type="text" id="sujet" required placeholder="Sujet">
+                    <textarea type="text" id="message" placeholder="Des mots ..."></textarea>
+                    <div>
+                        <button type="submit" id="submit" onclick="sendMail()">Envoyer le message <i
+                                class="bi bi-send"></i></button>
+                    </div>
+                </div>
+
+                <div class="col-md-6  d-flex justify-content-center align-items-center">
+                    <img src="img/iconBoy3d.png" width="65%" alt="mini bouba">
+                </div>
+            </div>
+
+
+        </section> 
+
+
+    </main>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+    <!-- Annotation Script-->
+    <script type="module">
+        import { annotate } from 'https://unpkg.com/rough-notation?module';
+
+        const n1 = document.querySelector('a1');
+        const n2 = document.querySelector('a2');
+        const n3 = document.querySelector('a3');
+        const n4 = document.querySelector('a4');
+
+        const a1 = annotate(n1, { type: 'underline', color: 'red' });
+        const a2 = annotate(n2, { type: 'circle', color: 'red', padding: 10 });
+        const a3 = annotate(n3, { type: 'box', color: 'yellow', padding: 0 });
+        const a4 = annotate(n4, { type: 'bracket', color: 'red', padding: [1, 7], brackets: ['left', 'right'], strokeWidth: 3 })
+
+        a1.show();
+        a2.show();
+        a3.show();
+        a4.show();
+
+    </script>
+
 </body>
+
 </html>
