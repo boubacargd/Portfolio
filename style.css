@@ -342,7 +342,7 @@ option[selected] {
     animation-delay: 2s;
 }
 
-small{
+.dateExp{
     text-decoration: none;
     color:inherit;
 }
