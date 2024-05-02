@@ -4,7 +4,6 @@ body{
     background-color: black;
     color: white;
     font-family: "Lato", sans-serif;
-    backdrop-filter: blur(40px);
 
 }
 
@@ -123,6 +122,8 @@ option[selected] {
     padding-right: 1.5rem;
     border: none;
     border-radius: 10px;
+    color: #000000;
+    text-decoration: none;
 }
 
 
@@ -341,6 +342,10 @@ option[selected] {
     animation-delay: 2s;
 }
 
+small{
+    text-decoration: none;
+    color: #fff;
+}
 
 .text-box{
     padding: 20px 30px;
@@ -635,6 +640,10 @@ input:focus {
 
 @media screen and (max-width:538px) {
 
+    .logoLink{
+        width: 12%;
+    }
+
     .bienvenu p{
         font-size: 30px;
     }
@@ -656,6 +665,13 @@ input:focus {
     .box{
         width: 325px;
     }
+
+    nav div i{
+        text-decoration: none;
+        color: white;
+        font-size: 1rem;
+        padding: 0.4rem;
+    }
 }
 
 @media screen and (max-width:470px) {
@@ -672,6 +688,10 @@ input:focus {
 }
 
 @media screen and (max-width:400px) {
+
+    .logoLink{
+        width: 13%;
+    }
 
     .bienvenu p{
         font-size: 22px;
@@ -690,6 +710,25 @@ input:focus {
     .text-box h2{
         font-size: 12px;
     }
-  
 
+    .cv {
+        padding: 0.1rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        border: none;
+        border-radius: 10px;
+        margin-bottom: 15px;
+        font-size: 12px;
+    }
+
+}
+
+@media screen and (max-width:365px) {
+
+    .bienvenu p{
+        font-size: 20px;
+    }
+    .bienvenu div li span {
+        font-size: 8px;
+    }
 }
