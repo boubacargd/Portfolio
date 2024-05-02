@@ -344,7 +344,7 @@ option[selected] {
 
 small{
     text-decoration: none;
-    color: #fff;
+    color:inherit;
 }
 
 .text-box{
