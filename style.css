@@ -153,14 +153,15 @@ option[selected] {
 }
 
 .listelang{
-    display: grid;
+    display: flex;
+    justify-content: center;
     grid-template-columns: repeat(5, 1fr);
-    gap: 0.2rem;
-
+    gap: 2rem;
+ 
 }
 
 .listelang img{
-    width: 50%;
+    width: 10%;
     filter: grayscale(90%);
 }
 
@@ -178,6 +179,7 @@ option[selected] {
 }
 .section2 p{
     font-size: 1.2rem;
+    text-align: justify;
 }
 
 .info {
@@ -219,11 +221,7 @@ option[selected] {
 }
 
 .carte {
-/*      width: auto;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; */
+
     border-radius: 1rem;
     text-align: center;
     overflow: hidden;
@@ -242,9 +240,7 @@ option[selected] {
 
     background-color: #000000;
 
- 
 }
-
 
 
 .carte span {
@@ -254,9 +250,6 @@ option[selected] {
     background-clip: text;
     color: transparent;
 }
-
-
-
 
 
 .carte_para{
@@ -294,37 +287,6 @@ option[selected] {
 /* pop */
 
 
-
-.popUps p{
-    font-weight: 500;
-    
-}
-.lien{
-    bottom: 2rem;
-    left: 35%;
-}
-
-.fermer{
-    text-decoration: none;
-    border: 1px solid rgb(255, 255, 255);
-    background-color: transparent;
-    width: 10%;
-    height: 6%;
-    border-radius: 1rem;
-    font-size: 0.6rem;
-    position: absolute;
-    top: 2rem;
-    right: 2rem;
-    color: rgb(255, 255, 255);
-
-}
-
-.fermer:hover{
-    background-color: #ff0000;
-    color: white;
-    border: none;
-    
-}
 
 .lienSource{
     width: 220px;
@@ -464,44 +426,6 @@ option[selected] {
     left: -15px;
 }
 
-@media screen  and (max-width:600px) {
-    .timeline{
-        margin: 50px auto;
-    }
-    .timeline::after{
-        left: 31px;
-    }
-    .box{
-        width: 100%;
-        padding-left: 80px;
-        padding-right: 25px;
-    }
-
-    .text-box{
-        font-size: 10px;
-    }
-    .text-box h2{
-        font-size: 10px;
-    }
-    .text-box small{
-        margin-top: 10px;
-    }
-    .right-container{
-        left: 0;
-    }
-
-    .left-container img,  .right-container img{
-        left: 10px;
-    }
-
-    .left-arrow, .right-arrow{
-        border-right: 15px solid white;
-        border-left: 0;
-        left: -15px;
-    }
-
-}
-
 .form {
     margin: 30px 0px;
 }
@@ -580,37 +504,192 @@ input:focus {
     border-radius: 50%;
 }
 
-.random img:nth-child(1){
-    width: 160px;
+
+
+@media screen  and (max-width:1128px) {
+    h1{
+        font-size: 30px;
+    }
+    .bienvenu p{
+        font-size: 30px;
+    }
+    .bienvenu div li span {
+        font-size: 13px;
+    }
+    .bienvenu div li {
+        margin-bottom: 7px;
+    }
+    
+    .bienvenu div li .bi{
+        margin-right: 7px;
+    }
+    
+    .cv {
+        padding: 0.2rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        border: none;
+        border-radius: 10px;
+     
+    }
+    .section2 p{
+        font-size: 15px;
+    }
+
+
+    .text-box{
+        font-size: 13px;
+    }
+    .text-box h2{
+        font-size: 13px;
+    }
+
 }
-.random img:nth-child(2){
-    width: 67px;
-}.random img:nth-child(3){
-    width: 60px;
-}.random img:nth-child(4){
-    width: 40px;
-}.random img:nth-child(5){
-    width: 100px;
-}.random img:nth-child(6){
-    width: 900px;
-}.random img:nth-child(7){
-    width: 120px;
+
+
+@media screen  and (max-width:952px) {
+
+    .bienvenu p{
+        font-size: 25px;
+    }
+    .bienvenu div li span {
+        font-size: 10px;
+    }
+
+    
+}
+
+@media screen  and (max-width:768px) {
+
+    .bienvenu p{
+        font-size: 40px;
+    }
+    .bienvenu div li span {
+        font-size: 15px;
+    }
+    .cv {
+        padding: 0.4rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        border: none;
+        border-radius: 10px;
+        margin-bottom: 15px;
+    }
+
+    .bienvenu div li {
+        margin-bottom: 6px;
+    }
+
 }
 
 
+@media screen  and (max-width:650px) {
 
+    .bienvenu p{
+        font-size: 35px;
+    }
+    .bienvenu div li span {
+        font-size: 12px;
+    }
+    .info{
+        display: flex;
+        justify-content: start;
+        font-size: 1rem;
+    }
+    .timeline{
+        margin: 50px auto;
+    }
+    .timeline::after{
+        left: 31px;
+    }
+    .box{
+        width: 100%;
+        padding-left: 80px;
+        padding-right: 25px;
+    }
 
-.random i{
-    max-width: 200px;
+    .text-box{
+        font-size: 15px;
+    }
+    .text-box h2{
+        font-size: 15px;
+    }
+    .text-box small{
+        margin-top: 10px;
+    }
+    .right-container{
+        left: 0;
+    }
+
+    .left-container img,  .right-container img{
+        left: 10px;
+    }
+
+    .left-arrow, .right-arrow{
+        border-right: 15px solid white;
+        border-left: 0;
+        left: -15px;
+    }
+
 }
-.random i {
-    margin: 1rem;
-    background-color: #fba71b;
-    color: white;
-    width: 90px;
-    height: 70px;
-    font-size: 3rem;
-    padding: 1.5rem;
-    border: 3px solid white ;
-    border-radius: 50%;
+
+@media screen and (max-width:538px) {
+
+    .bienvenu p{
+        font-size: 30px;
+    }
+    .bienvenu div li span {
+        font-size: 12px;
+    }
+
+    .cv {
+        padding: 0.2rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        border: none;
+        border-radius: 10px;
+        margin-bottom: 15px;
+        font-size: 15px;
+    }
+
+
+    .box{
+        width: 325px;
+    }
+}
+
+@media screen and (max-width:470px) {
+
+    .bienvenu p{
+        font-size: 25px;
+    }
+    .bienvenu div li span {
+        font-size: 10px;
+    }
+    .bienvenu div li {
+        margin-bottom: 5px;
+    }
+}
+
+@media screen and (max-width:400px) {
+
+    .bienvenu p{
+        font-size: 22px;
+    }
+    .bienvenu div li span {
+        font-size: 9px;
+    }
+    .bienvenu div li {
+        margin-bottom: 4px;
+    }
+
+
+    .text-box{
+        font-size: 12px;
+    }
+    .text-box h2{
+        font-size: 12px;
+    }
+  
+
 }
