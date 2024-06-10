@@ -46,7 +46,7 @@ function sendMail() {
     emailjs
         .send(serviceID, templateID, params) 
         .then((res) => {
-
+          
             document.getElementById("nom").value = "",
             document.getElementById("email").value = "",
             document.getElementById("sujet").value = "",
