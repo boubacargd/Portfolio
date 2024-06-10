@@ -1,9 +1,9 @@
 
 const dynamicText = document.getElementById("developpeur");
 
-const words = ["Fullstack", "Java", "React JS", "Wordpress"];
-const colors = ["yellow", "red", "#61dafb", "violet"]; // Tableau des couleurs correspondant à chaque mot
-// Variables pour suivre la position et l'état de suppression du mot
+const words = ["Fullstack", "Java", "React JS", "Angular", "Wordpress"];
+const colors = ["yellow", "orange", "#61dafb", "red", "violet"]; 
+
 let wordIndex = 0;
 let charIndex = 0;
 let isDeleting = false;
